@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battlefield</title>
+    <link rel="stylesheet" href="battlefield.css">
+    <link rel="icon" href="images/ls2.webp">
+</head>
+<body>
+
+    <header>
+        <h1>Battlefield</h1>
+        <img src="images/ls1.webp" alt="Battlefield Logo">
+    </header>
+
+    <section>
+        <h2>Descripción del Juego</h2>
+        <p>
+            "Battlefield" es una serie de videojuegos de disparos en primera persona desarrollada por DICE y publicada por Electronic Arts. La serie se destaca por su enfoque en el juego en equipo, vehículos y entornos destructibles, proporcionando experiencias multijugador intensas y campañas para un jugador emocionantes.
+        </p>
+    </section>
+
+    <section>
+        <h2>Modos de Juego</h2>
+        <p>
+            La serie Battlefield ofrece una variedad de modos, desde los clásicos como Conquista y Asalto, hasta modos más recientes como Grandes Operaciones y Firestorm. Estos modos abarcan desde enfrentamientos épicos hasta situaciones tácticas, adaptándose a diversos estilos de juego.
+        </p>
+        <button onclick="mostrarModos()">Más sobre Modos de Juego</button>
+        <div id="modosInfo" style="display: none;">
+            <p>
+                Los modos de juego en Battlefield se destacan por su diversidad y estrategia. Con modos como Conquista, donde equipos compiten por el control de puntos en el mapa, y Grandes Operaciones, que simula batallas a gran escala a lo largo de varios días, cada modo ofrece una experiencia única.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Armas y Equipamiento</h2>
+        <p>
+            La serie Battlefield presenta una amplia variedad de armas y equipamiento, adaptados a diferentes épocas y escenarios. Desde rifles de asalto hasta dispositivos de apoyo, la elección de armamento y equipamiento afecta la estrategia y el estilo de juego de los jugadores.
+        </p>
+    </section>
+
+    <section>
+        <h2>Vehículos</h2>
+        <p>
+            Los vehículos son una parte integral de Battlefield, ofreciendo desde tanques y aviones hasta vehículos de asalto anfibios. La habilidad para manejar y coordinar el uso de vehículos es crucial para el éxito en muchos modos de juego.
+        </p>
+    </section>
+
+    <section>
+        <h2>Expansiones Destacadas</h2>
+        <p>
+            A lo largo de los años, Battlefield ha lanzado expansiones que han introducido nuevos mapas, modos y contenido adicional. Expansiones como "Back to Karkand" y "Naval Strike" han dejado una marca duradera en la comunidad por su impacto en la jugabilidad.
+        </p>
+    </section>
+
+    <section>
+        <h2>Cosas Curiosas</h2>
+        <p>
+            - El famoso "Levolution" introducido en Battlefield 4 permitía cambios dinámicos en el entorno, como derrumbes de edificios y cambios climáticos.
+            <br>
+            - La serie ha explorado una variedad de épocas históricas y futuristas, desde la Segunda Guerra Mundial hasta conflictos modernos e incluso la Primera Guerra Mundial en Battlefield 1.
+        </p>
+    </section>
+
+    <section>
+        <h2>Recomendaciones para Jugadores</h2>
+        <p>
+            Explora diferentes clases y roles para adaptarte a situaciones cambiantes. La comunicación y coordinación con tu equipo son esenciales, especialmente al utilizar vehículos o al enfrentarte a eventos dinámicos en el campo de batalla.
+        </p>
+    </section>
+
+    <section>
+        <h2>Enlaces Relacionados</h2>
+        <ul>
+            <li><a href="https://www.ea.com/es-es/games/battlefield" target="_blank">Sitio Oficial de Battlefield</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Battlefield_(serie)" target="_blank">Página de Wikipedia</a></li>
+        </ul>
+    </section>
+
+    <script>
+        function mostrarModos() {
+            var modosInfo = document.getElementById("modosInfo");
+            modosInfo.style.display = (modosInfo.style.display === 'none') ? 'block' : 'none';
+        }
+    </script>
+
+</body>
+</html>

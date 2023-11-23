@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo: Reach</title>
+    <link rel="stylesheet" href="helo.css">
+    <link rel="icon" href="images/sa3.webp">
+</head>
+<body>
+
+    <header>
+        <h1>Halo Reach</h1>
+        <img src="images/sa1.webp" alt="Halo: Reach Logo">
+    </header>
+
+    <section>
+        <h2>Descripción del Juego</h2>
+        <p>
+            "Halo: Reach" es un videojuego de disparos en primera persona desarrollado por Bungie y publicado por Microsoft Game Studios. Forma parte de la serie "Halo" y sirve como preludio a los eventos del juego original "Halo: Combat Evolved". El juego se lanzó en 2010 para la consola Xbox 360 y más tarde para otras plataformas.
+        </p>
+    </section>
+
+    <section>
+        <h2>Historia y Personajes</h2>
+        <p>
+            La historia de "Halo: Reach" sigue al equipo Noble en su lucha contra las fuerzas alienígenas Covenant. El juego destaca por su narrativa emotiva y personajes memorables, como Noble Six, el protagonista personalizable, y otros miembros del equipo como Carter, Kat, Jun, Emile y Jorge.
+        </p>
+        <button onclick="mostrarHistoriaPersonajes()">Más sobre Historia y Personajes</button>
+        <div id="historiaPersonajesInfo" style="display: none;">
+            <p>
+                La trama se desarrolla en el planeta Reach mientras el equipo Noble intenta resistir la invasión Covenant. La relación entre los personajes y los eventos trágicos han dejado una marca duradera en la historia de la serie "Halo".
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Modos de Juego</h2>
+        <p>
+            "Halo: Reach" presenta varios modos de juego, incluyendo la campaña para un jugador que sigue la historia del equipo Noble, así como modos multijugador como Combate a Muerte, Invasión y Forge, que permite a los jugadores crear sus propios mapas y modos de juego.
+        </p>
+        <button onclick="mostrarModos()">Más sobre Modos de Juego</button>
+        <div id="modosInfo" style="display: none;">
+            <p>
+                La campaña de "Halo: Reach" sigue al equipo Noble en su lucha contra las fuerzas alienígenas Covenant. Los modos multijugador ofrecen experiencias variadas, desde combates intensos hasta la creatividad en la construcción de mapas en Forge.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Armas y Vehículos</h2>
+        <p>
+            La variedad de armas y vehículos en "Halo: Reach" es fundamental para la experiencia de juego. Desde el icónico Rifle de Asalto MA37 hasta los vehículos como el Warthog y el Banshee, los jugadores tienen acceso a una amplia gama de opciones estratégicas en el campo de batalla.
+        </p>
+        <button onclick="mostrarArmasVehiculos()">Más sobre Armas y Vehículos</button>
+        <div id="armasVehiculosInfo" style="display: none;">
+            <p>
+                "Halo: Reach" presenta una variedad de armas futuristas y vehículos icónicos de la serie. La elección estratégica de armas y la habilidad para utilizar vehículos son clave para el éxito en el combate.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Logros y Desafíos</h2>
+        <p>
+            Los jugadores de "Halo: Reach" pueden desbloquear logros y enfrentarse a desafíos tanto en la campaña como en el modo multijugador. Estos logros añaden una capa adicional de desafío y recompensa para aquellos que buscan completar todas las metas del juego.
+        </p>
+    </section>
+
+    <section>
+        <h2>Imágenes Movibles</h2>
+        <div class="movable-images">
+            <img src="images/sa2.webp" alt="Image 1">
+            <img src="images/sa3.webp" alt="Image 2">
+        </div>
+    </section>
+
+    <section>
+        <h2>Enlaces Relacionados</h2>
+        <ul>
+            <li><a href="https://www.halowaypoint.com/" target="_blank">Halo Waypoint</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/Halo:_Reach" target="_blank">Página de Wikipedia</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Buscador</h2>
+        <input type="text" id="searchInput" placeholder="Buscar...">
+        <button onclick="buscar()">Buscar</button>
+        <p id="searchResult"></p>
+    </section>
+
+    <script>
+        function mostrarHistoriaPersonajes() {
+            var historiaPersonajesInfo = document.getElementById("historiaPersonajesInfo");
+            historiaPersonajesInfo.style.display = (historiaPersonajesInfo.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function mostrarModos() {
+            var modosInfo = document.getElementById("modosInfo");
+            modosInfo.style.display = (modosInfo.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function mostrarArmasVehiculos() {
+            var armasVehiculosInfo = document.getElementById("armasVehiculosInfo");
+            armasVehiculosInfo.style.display = (armasVehiculosInfo.style.display === 'none') ? 'block' : 'none';
+        }
+
+        function buscar() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var result = document.getElementById("searchResult");
+
+            // Simular una búsqueda simple
+            if (input.includes("historia")) {
+                result.innerHTML = "Resultados de la búsqueda: Información sobre la Historia y Personajes.";
+            } else if (input.includes("modos")) {
+                result.innerHTML = "Resultados de la búsqueda: Información sobre Modos de Juego.";
+            } else if (input.includes("armas") || input.includes("vehículos")) {
+                result.innerHTML = "Resultados de la búsqueda: Información sobre Armas y Vehículos.";
+            } else {
+                result.innerHTML = "No se encontraron resultados para la búsqueda.";
+            }
+        }
+    </script>
+
+</body>
+</html>

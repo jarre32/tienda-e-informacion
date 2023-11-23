@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(246, 246, 246);
+    background-color: black;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #aa1d1d;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #3498db;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    animation: zoomIn 0.8s ease-in-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #38a8a8;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+blockquote {
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+code {
+    font-family: 'Courier New', monospace;
+    background-color: #ecf0f1;
+    padding: 3px 5px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Styling for the System Requirements list */
+ul.system-requirements {
+    margin-top: 0;
+}
+
+/* Styling for the Characters list */
+ul.characters {
+    padding-left: 20px;
+}
+
+/* Styling for the Achievements/Trophies list */
+ul.achievements {
+    padding-left: 20px;
+}
+
+/* Styling for the Related Links list */
+ul.related-links {
+    padding-left: 20px;
+}
+
+
